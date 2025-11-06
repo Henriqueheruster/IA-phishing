@@ -38,7 +38,7 @@ Ou gerar relatório completo:
 from detector_phishing import gerar_relatorio
 print(gerar_relatorio("https://www.pisocks.com"))
 ```
-##Requisitos e Dependências
+## Requisitos e Dependências
 ```python
 ---
 
