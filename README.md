@@ -12,7 +12,7 @@
 3. Whitelist: 20+ domínios confiáveis
 4. Blacklist: Phishings confirmados
 
-# Estrutura Interna
+## Estrutura Interna
 - Config → Armazena parâmetros globais, listas e caminhos.
 - PhishingDetector → Classe principal que integra ML + heurísticas.
 - verificar_heuristicas → Detecta padrões suspeitos em URLs.
@@ -44,7 +44,7 @@ print(gerar_relatorio("https://www.pisocks.com"))
 - Adicionar novos phishings à blacklist
 - Re-treinar modelo a cada 3 meses
   
-# Saídas Possíveis 
+## Saídas Possíveis 
 | Status          | Descrição                            |
 | --------------- | ------------------------------------ |
 | 🟢 **SEGURO**   | Nenhum indicador de risco            |
