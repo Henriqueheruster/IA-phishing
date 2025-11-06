@@ -23,17 +23,20 @@
 
 ## Como Usar
 ```python
-from sistema_phishing import classificar_url
+from detector_phishing import PhishingDetector
 
-url = "https://example.com"
-status, probabilidade, alertas = classificar_url(url)
+detector = PhishingDetector()
+status, prob, alertas = detector.classificar("https://suspicious-site123.tk")
 
-if status == "PHISHING":
-    bloquear_url(url)
-elif status == "SUSPEITO":
-    alertar_usuario(url)
-else:  # SEGURO
-    permitir_acesso(url)
+print(status)   # "PHISHING"
+print(prob)     # 0.91
+print(alertas)  # ["TLD de alto risco", "Palavra suspeita: ..."]
+```
+Ou gerar relatório completo:
+
+```python
+from detector_phishing import gerar_relatorio
+print(gerar_relatorio("https://www.pisocks.com"))
 ```
 
 ## Manutenção
