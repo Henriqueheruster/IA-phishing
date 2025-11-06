@@ -38,6 +38,25 @@ Ou gerar relatório completo:
 from detector_phishing import gerar_relatorio
 print(gerar_relatorio("https://www.pisocks.com"))
 ```
+##Requisitos e Dependências
+```python
+---
+
+## ⚙️ Como Usar
+
+### 🔧 Requisitos
+
+- Python 3.10 ou superior  
+- TensorFlow 2.x  
+- NumPy  
+- Pickle  
+- (opcional) Jupyter ou VSCode para testes
+
+Instale as dependências:
+
+```bash
+pip install tensorflow numpy
+```
 
 ## Manutenção
 - Atualizar whitelist mensalmente
